@@ -1,0 +1,438 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+  margin:0 auto;
+  width:80%;
+}
+
+/* header */
+header{
+    width:100%;
+    height:80px;
+    background-color: #d3d3d3;
+    line-height: 5em;
+    float:left;
+    overflow:hidden;
+}
+
+.wed{
+  width:100px;
+  height:80px;
+}
+
+h1{
+    float:left;
+    /* background-color: olive; */
+    margin-right:70px;
+    margin-left:200px;
+    width:150px;
+    text-align:center;
+}
+.contact{
+    background-color:black;
+    width:200px;
+    float:right;
+    color:white;
+    text-align:center;
+}
+nav {
+   
+    float:left;
+}
+  ul {
+    display: flex;
+  }
+  li {
+    list-style: none;
+  }
+  a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-right: 35px;
+  }
+  /* main */
+  .main-picture{
+    width:100%;
+    height:800px;
+    /* overflow: hidden; */
+  }
+
+  .visual{
+    width:100%;
+    height:800px;
+    overflow:hidden;
+  }
+
+  .main{
+    width:100%;
+    height:3200px;
+    background-color:#f0f0f0;
+    /* z-index: 1; */
+    overflow:hidden;
+  }
+
+  .container{
+    width:70%;
+    /* background-color: blanchedalmond; */
+    margin:0 auto;
+  }
+  .news{
+    width:100%;
+    height:400px;
+    z-index: 100;
+    /* margin-left:200px; */
+    display:flex;
+    flex-direction: column;
+    /* background-color:yellow; */
+  }
+
+  .news-word{
+    font:bold;
+    font-size:40px;
+  }
+  .news-box{
+    /* background-color:blue; */
+    width:400px;
+    height:150px;
+    
+    /* margin-top:70px;
+    margin-left:150px; */
+    align-items: flex-start;
+  }
+  .news-line{
+    width:100px;
+    height:60px;
+    /* background-color:aquamarine; */
+    border-bottom:solid 1px black;
+  }
+  
+  .title-box ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .title-box li {
+    width: 33%;
+    border-right: solid 1px #000;
+    padding: 10px 10px;
+  }
+  .title-box li:first-child {
+    padding-left: 0;
+  }
+  .title-box li:last-child {
+    border-right: none;
+    padding-right: 0;
+  }
+  .date-area {
+    margin-bottom: 16px;
+  }
+  .news-center {
+    width: 50px;
+    height: 20px;
+    line-height: 20px;
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    font-size: 0.75rem;
+    margin-left: 10px;
+    text-align: center;
+  }
+  
+.about-picture{
+  width:1000px;
+  height:600px;
+  /* float:left; */
+  justify-content: flex-start;
+}
+
+.about-word{
+  font:bold;
+  font-size:40px;
+}
+
+.about-right{
+  
+  width:400px;
+  height:400px;
+  /* background-color:red; */
+  margin-left:200px;
+  align-self: flex-end;
+  
+
+  /* position:  absolute;        要素の配置方法を指定 */
+  
+        
+  /* left:  1200px;                左からの位置指定 */
+  /* top: 500px;     */
+ 
+}
+
+.about-text{
+  width:100%;
+  height:200px;
+  /* background-color:brown; */
+  margin-top:30px;
+}
+
+.about-box{
+  width:100%;
+  height:850px;
+  /* background-color:green; */
+  /* position: relative; */
+  display:flex;
+  
+}
+
+
+
+
+
+.business-word{
+  font:bold;
+  font-size:40px;
+}
+.business-left{
+  width:400px;
+  height:150px;
+  margin-top:30px;
+  /* background-color:aqua; */
+  /* align-self: flex-start;  */
+  /* float:left; */
+  /* position:  absolute;        要素の配置方法を指定 */
+  
+        
+  /* left:  350px;                左からの位置指定 */
+  /* top: 350px;    */
+}
+
+.clear{
+  clear:both;
+}
+
+
+
+
+.business-card{
+  width:450px;
+  height:320px;
+  /* background-color:blueviolet; */
+  /* position:  absolute;        要素の配置方法を指定 */
+  /* align-self: flex-end;  */
+        margin-top:30px;
+  /* left:  350px;                左からの位置指定 */
+  /* top: 600px;  */
+}
+
+.business-card02{
+  width:450px;
+  height:320px;
+  /* background-color:blueviolet; */
+  /* position:  absolute;        要素の配置方法を指定 */
+  /* align-self: flex-start;  */
+  margin-top:30px;
+  /* left:  350px;                左からの位置指定 */
+  /* top: 1000px;  */
+}
+
+.business-card03{
+  width:450px;
+  height:320px;
+  /* background-color:blueviolet; */
+  /* position:  absolute;        要素の配置方法を指定 */
+  /* align-self: flex-end;  */
+        margin-top:170px;
+  /* left:  850px;                左からの位置指定 */
+  /* top: 500px;  */
+}
+
+.business-card04{
+  width:450px;
+  height:320px;
+  /* background-color:blueviolet; */
+  /* position:  absolute;        要素の配置方法を指定 */
+  /* align-self: flex-start;  */
+  margin-top:30px; 
+  /* left:  850px;                 左からの位置指定 */
+  /* top: 900px;  */
+}
+
+
+.business-picture{
+  width:450px;
+  height:300px;
+}
+
+.business-box{
+  width:100%;
+  height:900px;
+  /* background-color:yellow; */
+  /* position: relative; */
+  display:flex;
+  overflow:hidden;
+}
+.business-center{
+  /* background-color:olive; */
+  width:1000px;
+  margin:0 auto;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction:column;
+}
+
+
+
+
+.company-box{
+  width:100%;
+  height:1100px;
+  position: relative;
+  /* background-color:green; */
+  display: flex;
+  justify-content: center; /* アイテムを中央に寄せる */
+  padding-top:100px;
+}
+.company-left{
+  width:600px;
+  height:700px;
+  
+  background-color:white;
+  padding-left:100px;
+  padding-top:100px;
+  
+  /* position:  absolute;       */
+  
+        
+  left:  300px;              
+  top: 300px;   
+}
+
+.company-word{
+  font:bold;
+  font-size:40px;
+}
+
+.company-table{
+  /* position:absolute; */
+  top:600px;
+  left:400px;
+}
+
+.company-table th{
+  padding:5px;
+}
+.company-table td{
+  padding:5px;
+}
+.company-right{
+  /* position: absolute; */
+  width:600px;
+  height:700px;
+  top:400px;
+  left:850px;
+}
+
+.company-pic{
+  position: absolute;
+  width:600px;
+  height:400px;
+  top:250px;
+  left:900px;
+}
+  /* footer */
+  footer{
+    width:100%;
+    height:300px;
+    /* background-color:aqua; */
+    bottom:0;
+    /* position:absolute; */
+  }
+  .footer-right{
+    width:300px;
+    height:130px;
+    /* background-color:chocolate; */
+    float:right;
+    margin-right:300px;
+    margin-top:50px;
+  }
+
+  .footer-left{
+    width:300px;
+    height:220px;
+    /* background-color:green; */
+    margin-left:300px;
+    margin-top:70px; 
+    float:left;
+  }
+  .wed-between{
+    margin-bottom:100px;
+  }
+
+.wrapper{
+    width:100%;
+    min-height: 100vh;
+    position: relative;/*←相対位置*/
+  
+    box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+}
+
+ /*768px以下のとき*/
+ @media screen and (max-width: 768px) {
+    .title-left{
+      border:none;
+      margin-left:0px;
+      margin-top:40px;
+    }
+    .title-middle{
+      border:none;
+      margin-left:0px;
+      margin-top:40px;
+    }
+    .title-right{
+      border:none;
+      margin-left:0px;
+      margin-top:40px;
+    }
+    
+    .title-box{
+      flex-direction: column;
+    }
+    .news-margin{
+      height:600px;
+    }
+  .about-box{
+    
+      display: block;
+    
+  }
+  .about-picture{
+    width:100%;
+  }
+
+
+  .business-box{
+    display:block;
+  }
+  .business-center{
+  display:block;
+  }
+
+  .company-box{
+    display: block;
+    width:90%;
+    margin:0 auto;
+  }
+
+  h1{
+    float:none;
+    /* background-color: olive; */
+    margin-right:0px;
+    margin-left:0px;
+    width:150px;
+    text-align:center;
+  }
+}

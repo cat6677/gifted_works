@@ -1,0 +1,38 @@
+.container{
+    width:80%;
+    margin:0 auto;
+}
+#open_btn,#close_btn{
+    margin:10px auto;
+    width:200px;
+    height:80px;
+    background-color:blue;
+    border-radius:10px;
+    color:white;
+    text-align:center;
+    line-height: 5em;
+    cursor: pointer;
+}
+
+#modal{
+    width:500px;
+    height:200px;
+    border:1px solid black;
+    margin:0 auto;
+    display:none;
+    z-index:100;
+    background-color: white;
+    position: relative;
+}
+
+#modal_bg{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:rgba(0,0,0,0.7);
+   
+    display: none;
+    z-index:80;
+}

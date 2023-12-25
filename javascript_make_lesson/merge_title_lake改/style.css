@@ -1,0 +1,215 @@
+/*　スライド  */
+#main_img{
+    margin:0 auto;
+    text-align: center;
+    display:block;
+}
+
+.picture{
+    margin:0 auto;
+    padding-top:20px;
+    width:600px;
+    height:440px;
+    background-color:grey;
+}
+.container{
+    margin:0 auto;
+    width:80%;
+    background-color:palegoldenrod;
+    height:2000px;
+}
+#v_left{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background-color:green;
+    text-align: center;
+    color:white;
+    /* float:left; */
+    cursor: pointer;
+}
+
+#v_right{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background-color:green;
+    text-align: center;
+    color:white;
+    /* float:right; */
+    cursor: pointer;
+}
+#show_name{
+    width:100px;
+    height:20px;
+    background-color: white;
+    margin:0 auto;
+    text-align:center;
+}
+.btn_center{
+    display: flex;
+    width:220px;
+    height:20px;
+    /* background-color:red; */
+    margin:10px auto;
+}
+
+/* アコーディオン */
+/* アコーディオン */
+
+* {
+    list-style: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* アコーディオンメニュー全体のサイズ・位置 */
+  .ac {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* クリック領域 */
+  .ac-parent {
+    height: 50px;
+    border-bottom: 1px solid #fff;
+    background-color: #f97148;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    
+  }
+  
+  /* クリックしたら表示される領域 */
+  .ac-child {
+    display: none;
+    padding: 2em 1em;
+    background-color: #ffccbc;
+    text-align: center;
+  }
+
+  .accordion{
+    width:800px;
+    height:1000px;
+    /* background-color: green; */
+    margin:10px auto;
+  }
+
+/* モーダル */
+#open_btn,#close_btn{
+    margin:10px auto;
+    width:600px;
+    height:80px;
+    background-color:blue;
+    border-radius:10px;
+    color:white;
+    text-align:center;
+    line-height: 5em;
+    cursor: pointer;
+}
+
+#modal{
+    width:800px;
+    height:200px;
+    border:1px solid black;
+    margin:0 auto;
+    display:none;
+    z-index:100;
+    background-color: white;
+  
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#modal_bg{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:rgba(0,0,0,0.7);
+   
+    display: none;
+    z-index:80;
+}
+
+.modal__text{
+    text-align: center;
+    font-weight: bold;
+    font-size:30px;
+    margin-bottom:30px;
+}
+
+.mt_50{
+    margin-top:400px;
+}
+
+/* 追加css */
+.ac-parent:after {
+	
+	width: 28px;
+	height: 40px;
+    content: "◀︎";
+    color: black;
+    font-weight: bold;
+    
+    float:right;
+ 
+   
+
+	/* transform: translateY(-50%);
+	transition: 0.2s; */
+}
+.ac-parent.selected:after {
+	/* transform: translateY(-50%) rotate(180deg);
+	transition: 0.2s; */
+    content:"▼";
+   
+}
+
+
+.open {
+    cursor: pointer;
+  }
+  
+  #overlay {
+    display: none;
+    background-color: #00000070;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+  
+  #popup:checked + .overlay {
+    display: block;
+  }
+  
+  .window {
+    width: 90vw;
+    max-width: 380px;
+    height: 200px;
+    background-color: #7fff7f;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .close {
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 20px;
+  }

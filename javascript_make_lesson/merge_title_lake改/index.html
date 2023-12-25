@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>merge</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="picture">
+            <img src="img/01.jpg" id="main_img" width="540px" height="380px">
+           
+         
+            <div id="overlay">
+           
+              <div class="window">
+                
+                <img src="img/01.jpg" alt="ポップアップ画像" id="pop">
+              </div>
+            </div>
+            <div class="btn_center">
+                <div id="v_left"><</div>
+                <div id="show_name">日本の湖</div>
+                <div id="v_right">></div>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <dl class="ac">
+                <dt class="ac-parent">ウトナイ湖(クリックしてみよう)</dt>
+                <dd class="ac-child">ウトナイ湖は、周囲9km、面積275ha、平均水深0.6mの淡水湖で、美々川をはじめトキサタマップなどの清流がそそぎ、湖の周辺には、原野、湿原などの豊かな自然が形成されています。</dd>
+                <dt class="ac-parent">支笏湖(クリックしてみよう)</dt>
+                <dd class="ac-child">支笏湖は湖面標 高 248m、水域面積 78.76km2、最大水深 363m、平均水深 265.4m であり、日本で 2 番目※2 に深い 湖である。 湖底は、海面下 115m に相当し、これは内浦湾（噴火湾）最深部と支笏洞爺国立公園 内にある洞爺湖の湖底とほぼ同一水準にある。</dd>
+                <dt class="ac-parent">琵琶湖(クリックしてみよう)</dt>
+                <dd class="ac-child">琵琶湖（びわこ）は、滋賀県にある日本最大の淡水湖。 およそ400万年もの長い歴史をもつ日本最古の湖で、世界中で20ほど存在する古代湖のうちの一つです。 60種を超える固有種を誇るなど貴重な自然環境を有するとともに、近畿圏1450万人の生活や産業の発展に欠かすことができない国民的資産です。</dd>
+                <dt class="ac-parent">諏訪湖(クリックしてみよう)</dt>
+                <dd class="ac-child">海抜759メートル、湖周15.9キロメートル、面積13.3平方キロメートル。 四方を山に囲まれた諏訪盆地内に広がる、信州一大きな湖です。 諏訪湖畔には石彫公園（せきちょうこうえん）、湖畔公園が整備され、散策をするには最適です。</dd>
+            </dl>
+          </div>
+
+
+          <div id="open_btn" class="mt_50">一番綺麗だった湖は？(クリックしてみよう)</div>
+
+          <div id="modal_bg"></div>
+          <div id="modal">
+              
+              <p class="modal__text">ウトナイ湖と支笏湖でした。なんと同率1位!</p>
+              <div id="close_btn">閉じる</div>
+          </div>
+
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
